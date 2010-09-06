@@ -1,0 +1,136 @@
+\ProvidesPackage{studia}[2009/12/20 Studia UBB, Series Informatica]
+\NeedsTeXFormat{LaTeX2e}
+
+\setlength{\paperwidth}{8.27in}
+\setlength{\paperheight}{11.69in} 
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight} 
+
+\textheight=20.5cm
+\topmargin=4.60cm
+\headheight=\baselineskip
+\headsep=\baselineskip
+\footskip=\baselineskip
+\addtolength\textheight{-4\baselineskip}
+
+\textwidth=13cm
+\oddsidemargin=4cm
+\evensidemargin=4cm
+
+\addtolength\topmargin{-1in}
+\addtolength\oddsidemargin{-1in}
+\addtolength\evensidemargin{-1in}
+
+\parindent=0.25in
+\parskip=0in
+
+\newif\if@french
+\@frenchfalse
+
+%\RequirePackage[T1]{fontenc}
+\RequirePackage{indentfirst}
+\RequirePackage{amssymb}
+
+\DeclareOption{french}{\@frenchtrue}
+\ProcessOptions
+
+\renewcommand{\datename}{Received by the editors:}
+
+\@namedef{subjclassname@2010}{\textup{2010} Mathematics Subject Classification} 
+
+\def\subjclassCR#1{\def\@subjclassCR{#1}}
+\let\@subjclassCR=\@empty
+\newcommand{\subjclassCRname}{\textup{1998} CR Categories and Descriptors}
+\def\@setsubjclassCR{{\itshape\subjclassCRname.}\enspace\@subjclassCR\@addpunct.}
+
+\def\maketitle{\par
+  \@topnum\z@ % this prevents figures from falling at the top of page 1
+  \@setcopyright
+  \thispagestyle{firstpage}% this sets first page specifications
+  \uppercasenonmath\shorttitle
+  \ifx\@empty\shortauthors \let\shortauthors\shorttitle
+  \else \andify\shortauthors \fi
+  \@maketitle@hook
+  \begingroup
+  \@maketitle
+  \toks@\@xp{\shortauthors}\@temptokena\@xp{\shorttitle}%
+  \edef\@tempa{%
+    \@nx\markboth{\@nx\MakeUppercase{\the\toks@}}{\the\@temptokena}}\@tempa
+  \endgroup
+  \c@footnote\z@
+  \def\do##1{\let##1\relax}%
+  \do\maketitle \do\@maketitle \do\title \do\@xtitle \do\@title
+  \do\author \do\@xauthor \do\address \do\@xaddress
+  \do\email \do\@xemail \do\curraddr \do\@xcurraddr
+  \do\commby \do\@commby
+  \do\dedicatory \do\@dedicatory \do\thanks \do\thankses
+  \do\keywords \do\@keywords \do\subjclass \do\@subjclass
+  \do\subjclassCR \do\@subjclassCR
+}
+
+\def\@maketitle{%
+  \normalfont\normalsize
+  \let\@makefnmark\relax  \let\@thefnmark\relax
+  \ifx\@empty\@date\else \@footnotetext{\@setdate}\fi
+  \ifx\@empty\@subjclass\else \@footnotetext{\@setsubjclass}\fi
+  \ifx\@empty\@subjclassCR\else \@footnotetext{\@setsubjclassCR}\fi
+
+  \ifx\@empty\@keywords\else \@footnotetext{\@setkeywords}\fi
+  \ifx\@empty\thankses\else \@footnotetext{%
+    \def\par{\let\par\@par}\@setthanks}\fi
+  \@mkboth{\@nx\shortauthors}{\@nx\shorttitle}%
+  \global\topskip42\p@\relax % 5.5pc   "   "   "     "     "
+  \@settitle
+  \ifx\@empty\authors \else \@setauthors \fi
+  \ifx\@empty\@dedicatory
+  \else
+    \baselineskip18\p@
+    \vtop{\centering{\footnotesize\itshape\@dedicatory\@@par}%
+      \global\dimen@i\prevdepth}\prevdepth\dimen@i
+  \fi
+  \@setabstract
+  \normalsize
+  \if@titlepage
+    \newpage
+  \else
+    \dimen@34\p@ \advance\dimen@-\baselineskip
+    \vskip\dimen@\relax
+  \fi
+} % end \@maketitle
+
+\def\publname{STUDIA UNIV. BABE\c{S}-BOLYAI, INFORMATICA}
+\def\article@logo{%
+  \vtop to 0pt{%
+  \parindent\z@ \fontsize{7}{7\p@}\selectfont
+  STUDIA UNIV. BABE\c{S}--BOLYAI, INFORMATICA, 
+  Volume {\tiny\bfseries\currentvolume}, Number \currentissue, \currentyear\endgraf\vss}
+}
+
+\def\proof{\par{\it \proofname}. \ignorespaces}
+\def\proofof#1{{\noindent {\it \proofname\ #1}. \ignorespaces}}
+\def\endproof{~~\vbox{\hrule height0.6pt\hbox{%
+   \vrule height1.3ex width0.6pt\hskip0.8ex
+   \vrule width0.6pt}\hrule height0.6pt
+  }}
+
+\newenvironment{algorithm_studia}{%
+\begin{tabbing}
+xxxx\=xxxx\=xxxx\=xxxx\=xxxx\=xxxx\=xxxx\=xxxx\=xxxx\=\kill}%
+{\end{tabbing}}
+
+\def\copyrightyear{}
+\def\copyrightyearmodC{}
+\def\ISSN{}
+\def\copyrightprice{}
+\def\currentvolume{XLV}
+\def\currentyear{2000}
+\def\currentissue{1}
+\def\currentmonth{}
+
+\newcommand{\coordinates}[3]{
+  \def\currentvolume{#1}
+  \def\currentissue{#2}
+  \def\currentyear{#3}
+}
+
+\endinput

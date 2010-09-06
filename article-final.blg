@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.7)
+The top-level auxiliary file: article-final.aux
+The style file: unsrtnat.bst
+Database file #1: article.bib
+I was expecting a `,' or a `}'---line 75 of file article.bib
+ :     
+ :     year = {as of 2003}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "David Goldberg, David Nichols, Brian M. Oki, Douglas Terry" for entry Goldberg92usingcollaborative
+while executing---line 1233 of file unsrtnat.bst
+Too many commas in name 1 of "Badrul Sarwar, George Karypis, Joseph Konstan, John Riedl" for entry Sarwar01item-basedcollaborative
+while executing---line 1233 of file unsrtnat.bst
+Warning--empty booktitle in content_based_reco_syst
+Warning--empty publisher in content_based_reco_syst
+Too many commas in name 1 of "David Goldberg, David Nichols, Brian M. Oki, Douglas Terry" for entry Goldberg92usingcollaborative
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "David Goldberg, David Nichols, Brian M. Oki, Douglas Terry" for entry Goldberg92usingcollaborative
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Badrul Sarwar, George Karypis, Joseph Konstan, John Riedl" for entry Sarwar01item-basedcollaborative
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Badrul Sarwar, George Karypis, Joseph Konstan, John Riedl" for entry Sarwar01item-basedcollaborative
+while executing---line 1315 of file unsrtnat.bst
+Warning--empty booktitle in Sarwar01item-basedcollaborative
+Warning--empty booktitle in numpy
+Warning--empty booktitle in rho
+Warning--empty year in MOVIELENS-DATA
+Warning--empty year in MOVIELENS-DATA
+You've used 7 entries,
+            2481 wiz_defined-function locations,
+            595 strings with 5524 characters,
+and the built_in function-call counts, 2647 in all, are:
+= -- 247
+> -- 70
+< -- 7
++ -- 34
+- -- 20
+* -- 163
+:= -- 386
+add.period$ -- 28
+call.type$ -- 7
+change.case$ -- 13
+chr.to.int$ -- 7
+cite$ -- 14
+duplicate$ -- 162
+empty$ -- 275
+format.name$ -- 28
+if$ -- 587
+int.to.chr$ -- 1
+int.to.str$ -- 8
+missing$ -- 6
+newline$ -- 49
+num.names$ -- 18
+pop$ -- 77
+preamble$ -- 1
+purify$ -- 7
+quote$ -- 0
+skip$ -- 98
+stack$ -- 0
+substring$ -- 122
+swap$ -- 31
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 7
+while$ -- 22
+width$ -- 0
+write$ -- 102
+(There were 7 error messages)

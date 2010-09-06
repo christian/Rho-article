@@ -1,0 +1,52 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Pazzani and Billsus(2007)]{content_based_reco_syst}
+Michael Pazzani and Daniel Billsus.
+\newblock Content-based recommendation systems.
+\newblock pages 325--341. 2007.
+\newblock \doi{10.1007/978-3-540-72079-9\_10}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-540-72079-9\_10}.
+
+\bibitem[David~Goldberg(1992)]{Goldberg92usingcollaborative}
+Brian M. Oki Douglas~Terry David~Goldberg, David~Nichols.
+\newblock Using collaborative filtering to weave an information tapestry.
+\newblock \emph{Communications of the ACM}, 35:\penalty0 61--70, 1992.
+
+\bibitem[Badrul~Sarwar(2001)]{Sarwar01item-basedcollaborative}
+Joseph Konstan John~Riedl Badrul~Sarwar, George~Karypis.
+\newblock Item-based collaborative filtering recommendation algorithms.
+\newblock pages 285--295, 2001.
+
+\bibitem[Tak\'{a}cs et~al.(2009)Tak\'{a}cs, Pil\'{a}szy, N\'{e}meth, and
+  Tikk]{takacs09scalable}
+G\'{a}bor Tak\'{a}cs, Istv\'{a}n Pil\'{a}szy, Botty\'{a}n N\'{e}meth, and
+  Domonkos Tikk.
+\newblock Scalable collaborative filtering approaches for large recommender
+  systems.
+\newblock \emph{J. Mach. Learn. Res.}, 10:\penalty0 623--656, 2009.
+\newblock ISSN 1533-7928.
+\newblock URL \url{http://portal.acm.org/citation.cfm?id=1577069.1577091}.
+
+\bibitem[Library(***)]{numpy}
+Open~Source Library.
+\newblock Numpy library.
+\newblock ***.
+\newblock URL \url{http://numpy.scipy.org/}.
+
+\bibitem[Prodan(2010)]{rho}
+Cristian Prodan.
+\newblock The rho framework.
+\newblock 2010.
+\newblock URL \url{http://github.com/christian/Rho}.
+
+\bibitem[MOVIELENS-DATA()]{MOVIELENS-DATA}
+MOVIELENS-DATA.
+\newblock \emph{MovieLens dataset}.
+\newblock URL \url{http://www.grouplens.org/node/73}.
+
+\end{thebibliography}
